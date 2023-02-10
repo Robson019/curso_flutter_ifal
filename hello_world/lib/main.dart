@@ -116,7 +116,7 @@ class _MyHomePageState extends State<MyHomePage> {
         children: <Widget>[
           FloatingActionButton(
             onPressed: _incrementCounter,
-            tooltip: 'Increment',
+            tooltip: 'Incrementar',
             child: const Icon(Icons.add),
           ),
           const SizedBox(
@@ -124,7 +124,7 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
           FloatingActionButton(
             onPressed: _decrementCounter,
-            tooltip: 'Decrement',
+            tooltip: 'Decrementar',
             child: const Icon(Icons.remove),
           ),
         ],
