@@ -1,3 +1,5 @@
+import 'dart:html';
+
 import 'package:flutter/material.dart';
 
 void main() {
@@ -14,104 +16,87 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: Container(
-        color: Colors.white,
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: [
-                Container(
-                  color: Colors.cyan,
-                  height: 50,
-                  width: 50,
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text('IFAL: Curso de Flutter'),
+        ),
+        body: Container(
+          child: Column(
+            children: [
+              Container(
+                color: Colors.white,
+                height: 100,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Container(
+                      color: Colors.black26,
+                      width: 72,
+                      height: 100,
+                    ),
+                    Text('Conhecendo Flutter'),
+                    ElevatedButton(
+                      onPressed: () {},
+                      child: Icon(Icons.arrow_drop_up)
+                    )
+                  ],
                 ),
-                Container(
-                  color: Colors.purple,
-                  height: 50,
-                  width: 50,
-                ),
-                Container(
-                  color: Colors.orange,
-                  height: 50,
-                  width: 50,
-                ),
-              ],
-            ),
-            Stack(
-              alignment: AlignmentDirectional.center,
-              children: [
-                Container(
-                  color: Colors.red,
-                  height: 100,
-                  width: 100,
-                ),
-                  Container(
-                  color: Colors.blue,
-                  height: 50,
-                  width: 50,
-                ),
-              ],
-            ),
-            Stack(
-              alignment: AlignmentDirectional.center,
-              children: [
-                Container(
-                  color: Colors.blue,
-                  height: 100,
-                  width: 100,
-                ),
-                  Container(
-                  color: Colors.red,
-                  height: 50,
-                  width: 50,
-                ),
-              ],
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: [
-                Container(
-                  color: Colors.pink,
-                  height: 50,
-                  width: 50,
-                ),
-                Container(
-                  color: Colors.yellow,
-                  height: 50,
-                  width: 50,
-                ),
-                Container(
-                  color: Colors.blue,
-                  height: 50,
-                  width: 50,
-                ),
-              ],
-            ),
-            Container(
-              color: Colors.lightGreen,
-              height: 30,
-              width: 300,
-              child: Text(
-                'Instituto Federal',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 20,
-                ),
-                textAlign: TextAlign.center,
               ),
-            ),
-            ElevatedButton(
-              onPressed: () {
-                print('Você apertou o botão');
-              },
-              child: Text('Aperte o botão!'),
-            ),
-          ],
+              Container(
+                color: Colors.blue,
+                height: 40,
+              ),
+              Container(
+                color: Colors.white,
+                height: 100,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Container(
+                      color: Colors.black26,
+                      width: 72,
+                      height: 100,
+                    ),
+                    Text('Conhecendo Flutter'),
+                    ElevatedButton(
+                      onPressed: () {},
+                      child: Icon(Icons.arrow_drop_up)
+                    )
+                  ],
+                ),
+              ),
+              Container(
+                color: Colors.blue,
+                height: 40,
+              ),
+              Container(
+                color: Colors.white,
+                height: 100,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Container(
+                      color: Colors.black26,
+                      width: 72,
+                      height: 100,
+                    ),
+                    Text('Conhecendo Flutter'),
+                    ElevatedButton(
+                      onPressed: () {},
+                      child: Icon(Icons.arrow_drop_up)
+                    )
+                  ],
+                ),
+              ),
+              Container(
+                color: Colors.blue,
+                height: 40,
+              ),
+            ],
+          ),
+        ),
+        floatingActionButton: FloatingActionButton(
+          onPressed: () {}
         ),
       ),
     );
